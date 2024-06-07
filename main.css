@@ -729,6 +729,11 @@
 			display: block;
 			margin-bottom: 1.0em;
 		}
+			#main .testimonial img{
+				display: block;
+					margin: 0 auto;
+					box-shadow: 0 0 0 1.5em #ffffff;
+			}
 
 			#main .avatar img {
 				display: block;
@@ -738,6 +743,17 @@
 			}
 
 			#main .avatar:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: -3em;
+				width: calc(100% + 6em);
+				height: 1px;
+				z-index: -1;
+				background: #c8cccf;
+			}
+			#main .testimonial:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -758,6 +774,10 @@
 			}
 
 				#main .avatar:before {
+					left: -2em;
+					width: calc(100% + 4em);
+				}
+				#main .testimonial:before {
 					left: -2em;
 					width: calc(100% + 4em);
 				}
